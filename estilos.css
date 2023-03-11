@@ -5,6 +5,7 @@
 .card {
     background: #ffffff;
     border-radius: 5px;
+
 }
 
 body {
@@ -151,46 +152,12 @@ button.user-button span>span {
     width: 100%;
 }
 
-@media (width < 580px) {
-    .sidebar {
-        width: 72px;
-    }
+.carousel-item {
+    position: relative;
+    display: none;
+    width: 300%;
+    float: right;
 
-    .sidebar button>span {
-        width: 50px;
-    }
-
-    .sidebar button>span>span {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    button.nb-button i {
-        display: inline-flex;
-    }
-
-    button.nb-button span>span {
-        display: none;
-    }
-
-    button.user-button span>i {
-        display: none;
-    }
-
-    .logo-img {
-        width: 32px !important;
-        transition: 0.4s ease;
-        margin-left: 10px !important;
-
-    }
-   
-    .carousel {
-        font-size: 72px;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 70px !important;
-        transition: .3s ease;
-    }
 }
 
 .logo-img {
@@ -205,7 +172,8 @@ button.user-button span>span {
 
 .carousel {
     margin-left: 300px;
-    transition: .3s ease;
+    transition: .2s ease;
+
 }
 
 .carousel-inner {
@@ -213,12 +181,52 @@ button.user-button span>span {
     margin-top: 10px;
     background-color: #ffffff;
     padding: 5px;
+    text-align: center;
+
 }
 
-.container .carousel-inner .carousel-item img {
+.carousel-item img {
     width: 120px;
     height: 180px;
-    margin: auto 5px;
+    margin: 7px 7px;
+    transform: scale(1);
 }
 
+.carousel-item img:hover {
+    transform: scale(1.1);
+    transition: .2s ease;
+}
+
+h5 {
+    color: #000;
+    text-align: center;
+}
+
+/*botão*/
+
+.carousel-control-next-icon {
+    margin-left: 100px;
+    margin-bottom: 60px;
+
+}
+
+.carousel-control-prev-icon {
+    margin-right: 100px;
+    margin-bottom: 60px;
+}
+
+/*Conteudo */
+
+.container {
+    display: block;
+    background: #ffffff;
+    margin-top: 10px;
+    width: 98%;
+    height: auto;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+}
 

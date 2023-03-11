@@ -1,0 +1,85 @@
+/*Smartphone*/
+@media (width < 580px) {
+    .sidebar {
+        width: 72px;
+    }
+
+    .sidebar button>span {
+        width: 50px;
+    }
+
+    .sidebar button>span>span {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    button.nb-button i {
+        display: inline-flex;
+    }
+
+    button.nb-button span>span {
+        display: none;
+    }
+
+    button.user-button span>i {
+        display: none;
+    }
+
+    .logo-img {
+        width: 32px !important;
+        transition: 0.4s ease;
+        margin-left: 10px !important;
+
+    }
+
+    .carousel {
+        display: inline;
+        flex-direction: column;
+        position: fixed;
+        margin-left: 70px !important;
+        transition: .3s ease;
+    }
+
+    .carousel-item img {
+        width: 80px !important;
+        height: 120px !important;
+        margin-top: 4px;
+        transform: scale(1);
+
+    }
+
+    .carousel-item img:hover {
+        transform: scale(1.1);
+        transition: .2s ease;
+    }
+
+    .carousel-item {
+        position: relative;
+        display: none;
+        width: 350% !important;
+
+    }
+
+    .carousel-control-next-icon {
+        margin-left: 20px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .carousel-control-prev-icon {
+        margin-right: 20px !important;
+        margin-bottom: 50px !important;
+    }
+}
+
+/*Ipad / Tablet*/
+@media (width < 880px) {
+    .carousel-control-next-icon {
+        margin-left: 30px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .carousel-control-prev-icon {
+        margin-right: 30px !important;
+        margin-bottom: 50px !important;
+    }
+}
