@@ -183,6 +183,14 @@ button.user-button span>span {
         margin-left: 10px !important;
 
     }
+   
+    .carousel {
+        font-size: 72px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 70px !important;
+        transition: .3s ease;
+    }
 }
 
 .logo-img {
@@ -195,36 +203,22 @@ button.user-button span>span {
 
 /*carrosel de livros*/
 
-h4 {
-    color: #2ea846;
-    text-align: center;
-}
-
-.col-md-3 {
-   
-    width: 96%;
-    height: 170px;
-   text-align: center;
-
-}
-
-.col-md-3 img {
-    
-    width: 100px;
-    height: 150px;
-    margin-left: 10px;
-}
-
-.col-md-3 img:hover {
-    transform: scale(1.2);
+.carousel {
+    margin-left: 300px;
     transition: .3s ease;
 }
 
-.carousel-inner  {
+.carousel-inner {
+    position: relative;
     margin-top: 10px;
     background-color: #ffffff;
     padding: 5px;
 }
 
+.container .carousel-inner .carousel-item img {
+    width: 120px;
+    height: 180px;
+    margin: auto 5px;
+}
 
 
